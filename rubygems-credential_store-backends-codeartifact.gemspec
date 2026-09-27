@@ -5,7 +5,7 @@ require_relative "lib/rubygems/credential_store/backends/codeartifact/version"
 Gem::Specification.new do |spec|
   spec.name = "rubygems-credential_store-backends-codeartifact"
   spec.version = Rubygems::CredentialStore::Backends::Codeartifact::VERSION
-  spec.authors = ["nekketsuuu"]
+  spec.authors = ["Takuma Ishikawa"]
   spec.email = ["nekketsuuu@users.noreply.github.com"]
 
   spec.summary = "TODO: Write a short summary, because RubyGems requires one."
