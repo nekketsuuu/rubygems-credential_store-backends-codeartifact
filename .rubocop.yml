@@ -1,8 +1,10 @@
 AllCops:
   TargetRubyVersion: 3.3
+  NewCops: enable
 
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
+Metrics:
+  Enabled: false
 
-Style/StringLiteralsInInterpolation:
-  EnforcedStyle: double_quotes
+Style/AccessModifierDeclarations:
+  Enabled: true
+  EnforcedStyle: inline
