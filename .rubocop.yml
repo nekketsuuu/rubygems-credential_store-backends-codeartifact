@@ -1,9 +1,29 @@
+plugins:
+  - rubocop-rake
+  - rubocop-rspec
+
 AllCops:
-  TargetRubyVersion: 3.3
   NewCops: enable
 
 Metrics:
   Enabled: false
+
+RSpec:
+  Exclude:
+    - spec/fixtures/**/*
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/SpecFilePathFormat:
+  CustomTransform:
+    CodeArtifact: codeartifact
 
 Style/AccessModifierDeclarations:
   Enabled: true

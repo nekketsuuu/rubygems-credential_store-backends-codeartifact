@@ -3,8 +3,8 @@
 module Rubygems
   module CredentialStore
     module Backends
-      module Codeartifact
-        VERSION = "0.1.0"
+      module CodeArtifact
+        VERSION = '0.1.0'
       end
     end
   end

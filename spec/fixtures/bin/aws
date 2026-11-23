@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'json'
+
+puts JSON.dump('argv' => ARGV, 'profile' => ENV.fetch('AWS_PROFILE', nil), 'pager' => ENV.fetch('AWS_PAGER', nil))

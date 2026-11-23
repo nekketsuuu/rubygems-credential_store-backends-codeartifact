@@ -1,0 +1,4 @@
+profile: dev-sso
+domains:
+  "arn:aws:codeartifact:us-east-1:111122223333:domain/my-domain":
+    profile: shared-artifacts

@@ -1,14 +1,7 @@
 # frozen_string_literal: true
 
-require_relative "codeartifact/version"
+require 'rubygems/credential_store'
+require_relative 'codeartifact/version'
+require_relative 'codeartifact/backend'
 
-module Rubygems
-  module CredentialStore
-    module Backends
-      module Codeartifact
-        class Error < StandardError; end
-        # Your code goes here...
-      end
-    end
-  end
-end
+Gem::CredentialStore.register_backend('codeartifact', Rubygems::CredentialStore::Backends::CodeArtifact::Backend.new)

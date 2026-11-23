@@ -10,6 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Ruby ${{ matrix.ruby }}
+    timeout-minutes: 20
     strategy:
       matrix:
         ruby:
@@ -18,13 +19,15 @@ jobs:
           - '4.0'
 
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1.343.0
         with:
           ruby-version: ${{ matrix.ruby }}
+          rubygems: latest
+          bundler: latest
           bundler-cache: true
       - name: Run the default task
         run: bundle exec rake
