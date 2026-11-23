@@ -5,8 +5,6 @@ on:
     tags:
       - 'v*'
 
-permissions: {}
-
 jobs:
   push:
     name: Push gem to RubyGems.org
@@ -28,5 +26,7 @@ jobs:
           ruby-version: ruby
           rubygems: latest
           bundler: latest
-          bundler-cache: true
+          bundler-cache: false # to prevent cache poisoning
+      - name: Install dependencies
+        run: bundle install --jobs 4
       - uses: rubygems/release-gem@v1.4.2
