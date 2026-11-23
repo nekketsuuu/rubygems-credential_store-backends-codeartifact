@@ -16,6 +16,11 @@ jobs:
       contents: read
       id-token: write
 
+    env:
+      BUNDLE_GEMFILE: release/Gemfile
+      BUNDLE_FROZEN: 'true'
+      RELEASE_TASKS_ONLY: 'true'
+
     steps:
       - uses: actions/checkout@v7.0.1
         with:
@@ -25,7 +30,6 @@ jobs:
         with:
           ruby-version: ruby
           rubygems: latest
-          bundler: latest
           bundler-cache: false # to prevent cache poisoning
       - name: Install dependencies
         run: bundle install --jobs 4
