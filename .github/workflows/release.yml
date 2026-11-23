@@ -13,7 +13,7 @@ jobs:
     environment: rubygems
 
     permissions:
-      contents: write
+      contents: read
       id-token: write
 
     steps:
