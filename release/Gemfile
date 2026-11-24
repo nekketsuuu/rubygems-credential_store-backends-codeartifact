@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org', cooldown: 7
+
+# Not using `gemspec` here: it would put this gem's own version into release/Gemfile.lock,
+# which would then go stale on every version bump. `rake release` reads the gemspec directly.
+
+gem 'rake', '>= 13.4'
+gem 'sigstore-cli'

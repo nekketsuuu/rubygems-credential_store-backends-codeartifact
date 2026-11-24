@@ -1,0 +1,62 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    logger (1.7.0)
+    net-http (0.10.0)
+      net-protocol (>= 0.3.0)
+      uri (>= 0.11.1)
+    net-protocol (0.4.0)
+      timeout
+    protobug (0.2.0)
+    protobug_googleapis_field_behavior_protos (0.2.0)
+      protobug (= 0.2.0)
+      protobug_well_known_protos (= 0.2.0)
+    protobug_in_toto_attestation_protos (0.2.0)
+      protobug (= 0.2.0)
+      protobug_well_known_protos (= 0.2.0)
+    protobug_sigstore_protos (0.2.0)
+      protobug (= 0.2.0)
+      protobug_googleapis_field_behavior_protos (= 0.2.0)
+      protobug_well_known_protos (= 0.2.0)
+    protobug_well_known_protos (0.2.0)
+      protobug (= 0.2.0)
+    rake (13.4.2)
+    sigstore (0.3.0)
+      logger
+      net-http
+      protobug_in_toto_attestation_protos (~> 0.2.0)
+      protobug_sigstore_protos (~> 0.2.0)
+      uri
+    sigstore-cli (0.3.0)
+      sigstore (= 0.3.0)
+      thor
+    thor (1.5.0)
+    timeout (0.6.1)
+    uri (1.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake (>= 13.4)
+  sigstore-cli
+
+CHECKSUMS
+  bundler (4.1.0) sha256=d7b7a797b988e544a0677a9c6ed78146f2f63d05ae1af8bc7d9426cf88b46377
+  logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
+  net-http (0.10.0) sha256=1a2ff6e37a05724973c43f2bf7bf105f59c36a4cd0a7e9b1c021a0a566987c27
+  net-protocol (0.4.0) sha256=f9f90c8c6f64794a45160bf422177a336db12809de3beeeaa26b88fcd2e8c853
+  protobug (0.2.0) sha256=eb154bdbe2a3afe796711e0c16e89b2ed59efee0f172a10b634400471299b3f2
+  protobug_googleapis_field_behavior_protos (0.2.0) sha256=5d4ddcdcfd8616a74ac100de893e3768feee631579a777e23498d3a0ba45b893
+  protobug_in_toto_attestation_protos (0.2.0) sha256=64317c2bb5efe8494ecd0da6990f3c027e7af58bf12c34d6dbd1aa43fd87f731
+  protobug_sigstore_protos (0.2.0) sha256=b094cbb2ceadc9ffe6e34ec217613dd7a8e78b6411bf4404bd686f7343514e25
+  protobug_well_known_protos (0.2.0) sha256=89dd4965ed80ed9355b575e9243e7762487de581a8e2b34a97af6bef60fe3b3f
+  rake (13.4.2) sha256=cb825b2bd5f1f8e91ca37bddb4b9aaf345551b4731da62949be002fa89283701
+  sigstore (0.3.0) sha256=a6a25add5220283ed583011392f2952abc2125505ef08a52178fdb86ea67ca56
+  sigstore-cli (0.3.0) sha256=8dd883d7e036bcb51e1a63ead5479c29a818442f5d2b39289033f433401a301c
+  thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
+  timeout (0.6.1) sha256=78f57368a7e7bbadec56971f78a3f5ecbcfb59b7fcbb0a3ed6ddc08a5094accb
+  uri (1.1.2) sha256=89292e98eabbef6248b0a0ed5e7e398e152f83f17560023a6d94a7f492b169fb
+
+BUNDLED WITH
+  4.1.0
